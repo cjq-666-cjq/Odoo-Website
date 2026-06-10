@@ -12,20 +12,17 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f5f7fc;
       color: #1e293b;
       line-height: 1.5;
     }
-
     .container {
       max-width: 1280px;
       margin: 0 auto;
       padding: 0 32px;
     }
-
     .btn-primary {
       display: inline-flex;
       align-items: center;
@@ -42,12 +39,10 @@
       text-decoration: none;
       box-shadow: 0 4px 8px rgba(108, 43, 217, 0.2);
     }
-
     .btn-primary:hover {
       transform: translateY(-2px);
       background: linear-gradient(105deg, #5b23b8 0%, #7c3aed 100%);
     }
-
     .btn-outline {
       display: inline-flex;
       align-items: center;
@@ -62,13 +57,11 @@
       text-decoration: none;
       font-size: 0.85rem;
     }
-
     .btn-outline:hover {
       border-color: #6C2BD9;
       background: #f8f4ff;
       color: #6C2BD9;
     }
-
     header {
       background: white;
       border-bottom: 1px solid #e9edf2;
@@ -77,7 +70,6 @@
       z-index: 100;
       background-color: rgba(255,255,255,0.98);
     }
-
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -86,7 +78,6 @@
       padding: 18px 0;
       gap: 16px;
     }
-
     .logo h1 {
       font-size: 1.8rem;
       font-weight: 800;
@@ -102,14 +93,12 @@
       color: #5b6e8c;
       display: block;
     }
-
     .nav-links {
       display: flex;
       gap: 32px;
       align-items: center;
       flex-wrap: wrap;
     }
-
     .nav-links a {
       text-decoration: none;
       color: #1e293b;
@@ -117,11 +106,9 @@
       transition: 0.2s;
       font-size: 0.95rem;
     }
-
     .nav-links a:hover, .nav-links a.active {
       color: #6C2BD9;
     }
-
     .search-wrapper {
       display: flex;
       align-items: center;
@@ -130,11 +117,9 @@
       padding: 6px 16px;
       gap: 8px;
     }
-
     .search-wrapper i {
       color: #94a3b8;
     }
-
     .search-wrapper input {
       border: none;
       background: transparent;
@@ -143,31 +128,25 @@
       outline: none;
       width: 180px;
     }
-
-    /* modules grid */
     .modules-page {
       padding: 60px 0;
     }
-
     .page-title {
       font-size: 2.2rem;
       font-weight: 700;
       margin-bottom: 16px;
       text-align: center;
     }
-
     .page-sub {
       text-align: center;
       color: #475569;
       margin-bottom: 48px;
     }
-
     .modules-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 32px;
     }
-
     .module-card {
       background: white;
       border-radius: 24px;
@@ -176,13 +155,11 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.05);
       border: 1px solid #edf2f7;
     }
-
     .module-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 24px 40px -12px rgba(108, 43, 217, 0.2);
       border-color: #e2d6ff;
     }
-
     .card-header {
       display: flex;
       justify-content: space-between;
@@ -250,7 +227,6 @@
       margin-top: 16px;
       gap: 12px;
     }
-
     footer {
       background: #0f172a;
       color: #cbd5e1;
@@ -288,7 +264,6 @@
       text-align: center;
       font-size: 0.8rem;
     }
-
     @media (max-width: 768px) {
       .container { padding: 0 24px; }
       .navbar { flex-direction: column; align-items: stretch; }
@@ -327,19 +302,19 @@
       <h2 class="page-title">Premium Custom Modules</h2>
       <p class="page-sub">Carefully crafted, ready to install & fully documented</p>
       <div class="modules-grid">
-        <!-- Product 1 -->
+        <!-- Product 1: WhatsApp AI Connector - 链接到详情页 -->
         <div class="module-card">
           <div class="card-header">
-            <div class="module-icon"><i class="fas fa-warehouse"></i></div>
-            <div class="price">$199<small> one-time</small></div>
+            <div class="module-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="price">$299<small> one-time</small></div>
           </div>
-          <div class="module-title">Advanced Inventory Pro</div>
-          <div class="module-desc">Smart replenishment, multi‑warehouse sync, barcode scanning with expiry tracking.</div>
-          <div class="compat-tags"><span class="compat">Odoo 16</span><span class="compat">Odoo 17</span><span class="compat">18</span></div>
-          <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9 (124 reviews)</div>
+          <div class="module-title">Odoo WhatsApp AI Connector</div>
+          <div class="module-desc">Connect WhatsApp Business with AI-powered chatbot. Auto-reply, lead qualification, order updates & smart conversations.</div>
+          <div class="compat-tags"><span class="compat">Odoo 16</span><span class="compat">17</span><span class="compat">18</span></div>
+          <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0 (48 reviews)</div>
           <div class="card-actions">
             <button class="btn-outline demo-btn" style="padding:6px 16px;">Live Demo</button>
-            <button class="btn-primary buy-btn" style="padding:8px 18px;">Buy Now →</button>
+            <a href="product-whatsapp-ai.html" class="btn-primary" style="padding:8px 18px; text-decoration:none;">Buy Now →</a>
           </div>
         </div>
         <!-- Product 2 -->
@@ -406,7 +381,6 @@
 </footer>
 
 <script>
-  // 简单的交互演示
   document.querySelectorAll('.demo-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -415,7 +389,7 @@
       alert(`✨ Live demo: "${title}" — request full access via our sales team.`);
     });
   });
-  document.querySelectorAll('.buy-btn').forEach(btn => {
+  document.querySelectorAll('.buy-btn:not([href])').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const card = btn.closest('.module-card');
