@@ -125,7 +125,6 @@
       outline: none;
       width: 180px;
     }
-    /* product detail */
     .product-detail {
       padding: 60px 0;
     }
@@ -204,7 +203,7 @@
       margin-top: 32px;
       flex-wrap: wrap;
     }
-    /* QR code section */
+    /* 放大的二维码区域 */
     .qr-section {
       background: white;
       border-radius: 32px;
@@ -215,21 +214,36 @@
       border: 1px solid #edf2f7;
     }
     .qr-code {
-      max-width: 280px;
+      max-width: 400px;   /* 放大尺寸 */
       margin: 24px auto;
       background: #f8fafc;
-      padding: 16px;
-      border-radius: 24px;
+      padding: 20px;
+      border-radius: 28px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     .qr-code img {
       width: 100%;
       height: auto;
       display: block;
+      border-radius: 16px;
     }
     .qr-note {
       color: #475569;
-      font-size: 0.85rem;
-      margin-top: 16px;
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+    .email-contact {
+      margin-top: 20px;
+      font-size: 1rem;
+      background: #f1f5f9;
+      display: inline-block;
+      padding: 8px 24px;
+      border-radius: 40px;
+      color: #1e293b;
+    }
+    .email-contact i {
+      margin-right: 8px;
+      color: #6C2BD9;
     }
     footer {
       background: #0f172a;
@@ -273,6 +287,7 @@
       .product-header { flex-direction: column; }
       .navbar { flex-direction: column; align-items: stretch; }
       .nav-links { justify-content: space-between; gap: 20px; }
+      .qr-code { max-width: 280px; }
     }
   </style>
 </head>
@@ -330,18 +345,20 @@
       </div>
     </div>
 
-    <!-- 收款二维码区域 -->
+    <!-- 收款二维码区域，使用 alipay.jpg，并放大显示，下方显示邮箱 -->
     <div class="qr-section">
-      <h3><i class="fas fa-qrcode"></i> Secure Payment via QR Code</h3>
-      <p>Scan the QR code below with your banking app or PayPal to complete the purchase. After payment, we will send the module download link to your email within 24 hours.</p>
+      <h3><i class="fas fa-qrcode"></i> Secure Payment via Alipay</h3>
+      <p>Scan the QR code below with Alipay to complete the purchase. After payment, we will send the module download link to your email within 24 hours.</p>
       <div class="qr-code">
-        <!-- 这里替换为您的真实收款二维码图片 -->
-        <img src="https://placehold.co/400x400/eef2ff/6C2BD9?text=Your+Payment+QR+Code" alt="Payment QR Code">
-        <!-- 提示：请将上面的 src 替换为您的实际二维码图片地址，例如 "images/payment-qr.png" -->
+        <!-- 使用同级目录下的 alipay.jpg -->
+        <img src="alipay.jpg" alt="Alipay Payment QR Code">
       </div>
-      <p class="qr-note"><i class="fas fa-lock"></i> Secure payment via Stripe / PayPal. You will receive invoice and download instructions via email.</p>
-      <div style="margin-top: 24px;">
-        <span class="compat-badge" style="background:#e9d9ff;">Supports: Credit Card, PayPal, Bank Transfer</span>
+      <div class="email-contact">
+        <i class="fas fa-envelope"></i> Contact us: <strong>18438630181@163.com</strong>
+      </div>
+      <p class="qr-note"><i class="fas fa-lock"></i> Secure transaction. You will receive invoice and download instructions via email.</p>
+      <div style="margin-top: 20px;">
+        <span class="compat-badge" style="background:#e9d9ff;">Also accept: PayPal, Credit Card, Bank Transfer</span>
       </div>
     </div>
   </div>
