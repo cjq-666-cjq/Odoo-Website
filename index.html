@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Odoo Custom Apps | Tailored Modules for Your Business</title>
+  <title>Odoo Custom Apps | Premium Modules</title>
   <!-- Google Fonts & Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -22,14 +22,12 @@
       scroll-behavior: smooth;
     }
 
-    /* container utility */
     .container {
       max-width: 1280px;
       margin: 0 auto;
       padding: 0 32px;
     }
 
-    /* buttons & elements */
     .btn-primary {
       display: inline-flex;
       align-items: center;
@@ -74,26 +72,6 @@
       color: #6C2BD9;
     }
 
-    .btn-card {
-      background: #f1f5f9;
-      padding: 8px 18px;
-      border-radius: 30px;
-      font-weight: 500;
-      font-size: 0.85rem;
-      transition: all 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      cursor: pointer;
-      border: none;
-      color: #334155;
-    }
-
-    .btn-card:hover {
-      background: #6C2BD9;
-      color: white;
-    }
-
     .badge {
       background: #eef2ff;
       color: #4f46e5;
@@ -101,13 +79,10 @@
       font-weight: 600;
       padding: 4px 12px;
       border-radius: 30px;
-      letter-spacing: 0.3px;
     }
 
-    /* header styles */
     header {
       background: white;
-      backdrop-filter: blur(0px);
       border-bottom: 1px solid #e9edf2;
       position: sticky;
       top: 0;
@@ -155,7 +130,7 @@
       font-size: 0.95rem;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover, .nav-links a.active {
       color: #6C2BD9;
     }
 
@@ -249,7 +224,6 @@
       color: #6C2BD9;
     }
 
-    /* features grid */
     .features {
       padding: 70px 0;
       background: white;
@@ -287,182 +261,22 @@
       color: #6C2BD9;
     }
 
-    /* modules grid */
-    .modules-showcase {
-      padding: 60px 0;
-      background: #f5f7fc;
-    }
-
-    .modules-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 32px;
-      margin-top: 20px;
-    }
-
-    .module-card {
-      background: white;
-      border-radius: 24px;
-      padding: 24px;
-      transition: transform 0.25s ease, box-shadow 0.25s;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.05);
-      border: 1px solid #edf2f7;
-    }
-
-    .module-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 40px -12px rgba(108, 43, 217, 0.2);
-      border-color: #e2d6ff;
-    }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 16px;
-    }
-    .module-icon {
-      font-size: 2.2rem;
-      color: #6C2BD9;
-      background: #f0ecfe;
-      width: 52px;
-      height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 18px;
-    }
-    .price {
-      font-weight: 800;
-      font-size: 1.5rem;
-      color: #0f172a;
-    }
-    .price small {
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #5b6e8c;
-    }
-    .module-title {
-      font-size: 1.35rem;
-      font-weight: 700;
-      margin: 12px 0 8px;
-    }
-    .module-desc {
-      color: #4b5565;
-      font-size: 0.85rem;
-      margin: 12px 0;
-      line-height: 1.45;
-    }
-    .compat-tags {
-      display: flex;
-      gap: 8px;
-      margin: 16px 0;
-      flex-wrap: wrap;
-    }
-    .compat {
-      background: #eef2ff;
-      padding: 4px 12px;
-      border-radius: 30px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: #4338ca;
-    }
-    .rating {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin: 14px 0;
-      color: #f59e0b;
-      font-size: 0.8rem;
-    }
-    .card-actions {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 16px;
-      gap: 12px;
-    }
-    /* why choose us */
-    .why-us {
-      padding: 70px 0;
-      background: white;
-    }
-    .usp-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      text-align: center;
-    }
-    .usp-item i {
-      font-size: 2.4rem;
-      color: #6C2BD9;
-      margin-bottom: 16px;
-    }
-    /* testimonials */
-    .testimonials {
-      background: #f8fafd;
-      padding: 70px 0;
-    }
-    .testimonial-card {
-      max-width: 700px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 28px;
-      padding: 36px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-    .testimonial-text {
-      font-size: 1.1rem;
-      font-style: italic;
-      margin-bottom: 20px;
-      color: #1f2a44;
-    }
-    .testimonial-author {
-      font-weight: 700;
-      margin-top: 12px;
-    }
-    /* CTA */
-    .cta {
-      padding: 70px 0;
-      background: linear-gradient(135deg, #1e1b2e 0%, #2d2a4a 100%);
-      color: white;
-      text-align: center;
-    }
-    .cta h2 {
-      font-size: 2.2rem;
-      margin-bottom: 16px;
-    }
-    .cta p {
-      max-width: 600px;
-      margin: 0 auto 32px;
-      opacity: 0.85;
-    }
-    .cta .btn-primary {
-      background: white;
-      color: #6C2BD9;
-      box-shadow: none;
-    }
-    .cta .btn-primary:hover {
-      background: #f0f0ff;
-      color: #4c1d95;
-    }
-    /* footer */
     footer {
       background: #0f172a;
       color: #cbd5e1;
       padding: 48px 0 24px;
+      margin-top: 60px;
     }
     .footer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 40px;
       margin-bottom: 40px;
     }
     .footer-col h4 {
       color: white;
       margin-bottom: 20px;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     .footer-col ul {
       list-style: none;
@@ -484,33 +298,13 @@
       text-align: center;
       font-size: 0.8rem;
     }
+
     @media (max-width: 768px) {
-      .container {
-        padding: 0 24px;
-      }
-      .navbar {
-        flex-direction: column;
-        align-items: stretch;
-      }
-      .nav-links {
-        justify-content: space-between;
-        gap: 20px;
-      }
-      .search-wrapper {
-        width: 100%;
-      }
-      .search-wrapper input {
-        width: 100%;
-      }
-      .hero-content h1 {
-        font-size: 2.2rem;
-      }
-      .hero-stats {
-        margin-top: 20px;
-      }
-    }
-    button, .btn-card, .btn-primary, .btn-outline {
-      cursor: pointer;
+      .container { padding: 0 24px; }
+      .navbar { flex-direction: column; align-items: stretch; }
+      .nav-links { justify-content: space-between; gap: 20px; }
+      .hero-content h1 { font-size: 2.2rem; }
+      .hero-stats { margin-top: 20px; }
     }
   </style>
 </head>
@@ -524,10 +318,9 @@
         <span>Custom App Studio</span>
       </div>
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Modules</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="modules.html">Modules</a>
         <a href="#">Pricing</a>
-        <a href="#">Enterprise</a>
         <a href="#">Contact</a>
         <div class="search-wrapper">
           <i class="fas fa-search"></i>
@@ -549,8 +342,8 @@
           <h1>Tailor‑made modules <br> for modern business</h1>
           <p>Extend Odoo with premium, industry‑ready custom apps. Boost efficiency, automate workflows, and scale seamlessly.</p>
           <div class="hero-buttons">
-            <a href="#" class="btn-primary" id="exploreModulesBtn"><i class="fas fa-store"></i> Explore Modules</a>
-            <a href="#" class="btn-outline" id="customDemoBtn"><i class="fas fa-comment"></i> Request Custom App</a>
+            <a href="modules.html" class="btn-primary"><i class="fas fa-store"></i> Explore Modules</a>
+            <a href="#" class="btn-outline" id="requestDemoBtn"><i class="fas fa-comment"></i> Request Custom App</a>
           </div>
         </div>
         <div class="hero-stats">
@@ -575,345 +368,26 @@
       </div>
     </div>
   </section>
-
-  <!-- Modules Showcase Grid (6 featured modules) -->
-  <section class="modules-showcase">
-    <div class="container">
-      <h2 class="section-title">🔥 Premium custom modules</h2>
-      <p style="text-align:center; margin-bottom: 32px; color:#475569;">Battle‑tested, ready to install & fully documented.</p>
-      <div class="modules-grid">
-        <!-- Card 1 -->
-        <div class="module-card">
-          <div class="card-header"><div class="module-icon"><i class="fas fa-warehouse"></i></div><div class="price">$199<small> one-time</small></div></div>
-          <div class="module-title">Advanced Inventory Pro</div>
-          <div class="module-desc">Smart replenishment, multi‑warehouse sync, barcode scanning with expiry tracking.</div>
-          <div class="compat-tags"><span class="compat">Odoo 16</span><span class="compat">Odoo 17</span><span class="compat">18</span></div>
-          <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span style="color:#334155;">4.9 (124 reviews)</span></div>
-          <div class="card-actions"><button class="btn-card demo-module"><i class="fas fa-eye"></i> Live Demo</button><button class="btn-primary" style="padding: 8px 18px; font-size:0.8rem;">Buy Now →</button></div>
-        </div>
-        <!-- Card 2 -->
-        <div class="module-card">
-          <div class="card-header"><div class="module-icon"><i class="fas fa-chart-line"></i></div><div class="price">$249<small> one-time</small></div></div>
-          <div class="module-title">Dynamic Financial Suite</div>
-          <div class="module-desc">Real‑time P&L, cash flow forecasting, multi‑currency reports & dynamic dashboards.</div>
-          <div class="compat-tags"><span class="compat">Odoo 17</span><span class="compat">Odoo 18</span></div>
-          <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span style="color:#334155;">5.0 (87 reviews)</span></div>
-          <div class="card-actions"><button class="btn-card demo-module"><i class="fas fa-eye"></i> Demo</button><button class="btn-primary" style="padding: 8px 18px;">Buy Now →</button></div>
-        </div>
-        <!-- Card 3 -->
-        <div class="module-card">
-         -card">
-          <div class="card-header"><div class <div class="card-header"><div class="module-icon="module-icon"><i class="fas fa-robot"></i></"><i class="fas fa-robot"></i></div><divdiv><div class class="price">$="price">$299<small299<small> one> one-time</-time</small></div></small></div></div>
-         div>
-          <div class="module-title">CRM AI <div class="module Lead Scoring-title">CRM AI Lead Scoring</div>
-         </div>
-          <div class=" <div class="module-desc">module-desc">PredictPredictiveive lead lead scoring, automated scoring follow, automated follow‑‑ups, andups, and sales sales funnel intelligence funnel.</div>
-          intelligence.</div>
-          <div class=" <div class="compat-tags"><span classcompat-tags="compat">O"><span class="compat">Odoo 16doo 16</span><span</span><span class="compat">17 class="compat">17//18</span></18</span></div>
-          <div classdiv>
-          <div class="rating"><i class="="rating"><i class="fas fa-star"></i><i classfas fa-star"></i><i class="fas fa-star"></i><="fas fa-star"></i><ii class class="fas fa-star"></i="fas fa-star"></i><i class="fas fa-star"></i><i class="fas><i class=" fa-star"></i><i class="fas fa-star-halffas fa-star-half-alt"></i>-alt"></i> <span style=" <span style="color:#334155;">4.8color:#334155 (201;">4.8 (201 reviews)</span></ reviews)</span></div>
-         div>
-          <div class="card-actions"><button <div class="card-actions"><button class="btn-card class="btn-card demo-module demo-module"><i class"><i class="fas fa-eye="fas fa-eye"></i"></i> Demo</button> Demo</button><button class="><button class="btn-primary" style="paddingbtn-primary" style: 8px 18="padding: 8px 18px;">Buy Nowpx;">Buy Now →</button></ →</button></div>
-        </div>
-        </div>
-        <!--div>
-        <!-- Card Card 4 -->
-        <div class 4 -->
-        <div class="module-card="module-card">
-          <div class="card-header">
-          <div class="card"><div class-header"><div class="module-icon"><i class="module-icon"><i class="fas fa-users="fas fa-users"></i></div"></i></div><div class="price">$179><div class="price">$179<small><small> one-time</small one-time</small></div></div>
-         ></div></div>
-          <div class=" <div class="module-titlemodule-title">HR & Pay">HR & Payroll Plusroll Plus</div>
-         </div>
-          <div class="module-desc"> <div class="module-dAdvanced payrollesc">Advanced payroll rules rules, leave automation, leave automation & & employee employee self self‑‑service portal.</div>
-         service portal <div class=".</div>
-          <div class="compat-tagscompat-tags"><span class=""><span class="compat">compat">OOdoo 16</span><spandoo 16</span class="compat">17</><span class="compat">17span></div</span></div>
-          <div class>
-          <div class="rating"><i="rating"><i class="fas fa-star"></ class="fas fa-star"></i><ii><i class="fas fa-star"></i class="fas fa-star"></i><i class="><i class="fas fa-star"></fas fa-star"></i><i classi><i class="fas fa-star"></i><i="fas fa-star"></i><i class="fas fa class="fas fa-star"></i>-star"></i> <span style="color:#334155 <span style=";">4.9color:#334155;">4 (63.9 (63 reviews)</span></ reviews)</span></div>
-          <div class="div>
-          <div class="cardcard-actions"><-actions"><button class="btn-cardbutton class="btn-card demo-module demo-module"><i class"><i class="fas="fas fa-eye"></i fa-eye"></i> Demo</button> Demo</button><button class="><button class="btn-primary" stylebtn-primary" style="padding: 8px 18="padding: px;">Buy Now8px 18px;">Buy Now →</button></ →</button></div>
-        </div>
-        </div>
-div>
-        <!--        <!-- Card 5 -->
-        <div class Card 5="module-card -->
-        <div class="module-card">
-          <div class="card-header">
-          <div class"><div class="module="card-header"><div class="module-icon"><i class-icon"><i class="fas fa-s="fas fa-shopping-cart"></hopping-cart"></i></divi></div><div class="price">$159><div class="price<small> one">$159<small-time</small></div></div> one-time</small></div></div>
-          <div>
-          <div class="module-title class="module-title">E‑commerce Sync Master</div>
-         ">E‑commerce Sync Master <div class="</div>
-          <div class="module-desc">module-desc">WooWooCommerce/Magento/Commerce/Magento/Shopify integrationShopify integration, real‑, real‑time inventory & ordertime inventory & order sync sync.</div>
-         .</div>
-          <div class=" <div class="compat-tagscompat-tags"><span class"><span class="com="compat">Opat">Odoo 17doo 17</span><span</span><span class="compat">18 class="compat">18</span></div>
-          <div</span></div>
- class="rating          <div class="rating"><i class="fas fa-star"></i"><i class="fas><i class=" fa-star"></i><i class="fas fa-star"></fas fa-star"></i><i classi><i class="="fas fa-starfas fa-star"></i><i"></i><i class="fas class="fas fa fa-star"></i-star"></i><i class="fas fa-star-half-alt><i class="fas"></i> fa-star-half-alt <span style="color:#334155;">"></i> <span style="color:#334155;">4.7 (1124.7 reviews)</span></ (112div>
-          reviews)</span></div>
-          <div class="card <div class="card-actions"><button-actions"><button class class="btn-card="btn-card demo-module demo-module"><i class="fas"><i class="fas fa-eye"></i fa-eye"></i> Demo</button> Demo</button><button class="><button class="btn-primary" style="padding: btn-primary" style="padding: 8px8px 18px 18px;">Buy Now;">Buy Now →</button></ →</button></div>
-        </div>
-        </div>
-div>
-        <!--        <!-- Card 6 Card 6 -->
-        <div class="module-card -->
-        <div class">
-          <div class="module-card="card-header">
-          <div class="card-header"><div class="module-icon"><i class"><div class="module="fas fa-ch-icon"><i class="fas fa-chart-sart-simple"></iimple"></i></></div><div classdiv><div class="price">$219="price">$<small>219 one-time</small<small> one-time</small></div></></div></div>
-         div>
-          <div <div class="module-title">Project G class="module-title">Project Gantt &antt & Analytics Analytics</div</div>
-          <div class=">
-          <div class="module-desc">module-desc">Interactive Gantt viewInteractive Gant, resource allocationt view, resource allocation, times, timesheets &heets & cost control cost control.</div.</div>
-          <div class=">
-          <div class="compat-tagscompat-tags"><span class=""><span class="compat">Odoocompat">Odoo 16</span><span 16</span><span class="compat class="compat">17/18">17/18</span></div>
-          <</span></div>
-          <divdiv class="rating class="rating"><i class="fas"><i class="fas fa-star"></i><i class="fas fa-star"></i fa-star"></i><i class><i class="fas fa-star="fas fa-star"></i><i class"></i><i="fas fa-star"></i><i class="fas fa class="fas fa-star"></i><i class="fas-star"></i><i class="fas fa-star"></i fa-star"></i> <span style> <span style="color:#="color:#334155;">4.334155;">4.9 (949 (94 reviews)</span></ reviews)</span></div>
-         div>
-          <div class=" <div class="cardcard-actions"><button class="btn-actions"><button class="btn-card demo-module"><i-card demo-module"><i class=" class="fas fa-eye"></i> Demo</fas fa-eye"></i> Demo</button><button classbutton><button class="btn-primary="btn-primary" style="padding" style="padding:: 8px  8px 18px;">Buy18px;">Buy Now →</button></div>
-        Now →</button </div>
-     ></div>
-        </div>
- </div>
-           </div>
-      <div style=" <div style="text-align: centertext-align: center; margin-top:; margin-top: 48px 48px;">
-        <a href;">
-        <a href="#" class="btn="#" class="btn-outline" style="-outline" styleborder-color="border-color:#6C2BD9;:#6C2BD9; color:#6C2BD9 color:#6C2BD9;"><i class="fas;"><i class="fas fa- fa-arrow-right"></iarrow-right"></i> View all 150> View all 150+ modules+ modules</a>
-     </a>
-      </div>
-    </div </div>
-    </>
-  </section>
-
-  <!-- Why choosediv>
-  </section>
-
-  <!-- Why choose us + us + custom custom development -->
-  <section development -->
-  <section class="why-us">
-    <div class="container class="why-us">
-      <h2">
-    <div class="container class="section-title">
-      <h2 class="section-title">Trusted by">Trusted by  500500+ O+ Ododoo enterprises</h2o enterprises</h2>
-      <div class>
-      <div class="usp="usp-grid">
--grid">
-        <div class        <div class="usp-item="usp-item"><i class="fas"><i class="fas fa-c fa-crownrown"></i><h3>Odo"></i><ho Ready3>Odo certifiedo Ready certified</</h3><h3><p>Allp>All modules pass modules pass strict quality & strict security quality & security audits.</p></div>
-        audits.</p></div>
-        <div class="usp <div class="usp-item"><i class-item"><i class="fas fa-b="fas fa-bolt"></olt"></i><h3>Lightningi><h3 fast</h3>Lightning fast</h3><p>Optim><p>Optimized codeized code, no, no performance performance overhead.</ overhead.</p></div>
-       p></div <div class="usp-item>
-        <div class"><i class="fas="usp-item"><i class="fas fa-s fa-sync-alt"></iync-alt"></i><h3>><h3>Free lifetime updates</h3Free lifetime updates</h3><p>Stay><p>Stay compatible with compatible with newest newest Odoo releases.</ Odoo releases.</p></div>
-        <divp></div>
-        <div class="usp-item class="usp-item"><i class="fas fa"><i class="fas fa-p-penen-r-ruler"></iuler"></i><h3>B><h3>Bespoke development</h3espoke development</h3><p>F><p>Fully tailoredully tailored modules on demand modules on demand.</.</p></divp></div>
-      </div>
-    </div>
-      </div>
-  </section>
-
-  <!-- Test>
-    </div>
-  </sectionimonial Section>
-
-  <!-- Testimonial Section -->
-  <section -->
-  <section class="testimonials">
-    <div class="container class="testimonials">
-    <div class="container">
-      <h">
-      <h2 class="section2 class="section-title">What our-title">What our clients clients say</h2>
-      <div class="testim say</h2>
-      <divonial-card">
-        class="testimonial-card">
-        <div class="testim <div class="testimonial-textonial-text">“The">“The Advanced Advanced Inventory Pro transformed Inventory Pro transformed our logistics. The our logistics O. The OdooCraft teamdooCraft team delivered delivered custom custom enhancements in record enhancements in time. Highly record time. Highly recommend their recommend their modules modules for any Odo for any Odoo user.”</divo user.”</div>
-        <div>
-        <div><i class="fas><i class="fas fa-star" style="color:#f fa-star" style="color:#f59e0b59e0b;"></i><i class="fas fa;"></i><i-star" style=" class="fas fa-starcolor:#f59e0b;"></" style="color:#f59e0b;"></i><i classi><i class="fas fa-star="fas fa-star" style="color" style="color:#f59e:#f59e0b;"></i><i class="0b;"></ifas fa-star"><i class=" style="color:#fas fa-star" style="color:#f59e0f59e0b;"></ib;"></i><i class="fas><i class="fas fa-star" style fa-star" style="color:#f59e0b="color:#f59e0b;"></i></div;"></i></div>
-        <div class="testim>
-        <div class="testimonial-author">—onial-author">— Sarah Chen Sarah Chen, CO, COO at LogiO at LogTechiTech Group Group</div>
-       </div>
-        <div style <div style="margin-top: 24px;"><img=" src="#"margin-top: 24px;"><img alt="logo src="#" alt="logo" style="width" style="width:60:60px; borderpx; border-radius:50%;-radius:50%; display:inline-block display; background:#ddd; padding:inline-block; background:#ddd; padding:6:6pxpx;"><i class="fas;"><i class="fas fa-building fa-building" style="font-size:1." style="font8rem;-size:1. color:#88rem; color:#8B5B5CF6;"></iCF6;"></i></div>
-></div>
-           </div>
-    </div>
-    </div>
-  </section>
-
-  </div>
-  </section>
-
- <!-- Call to Action  <!-- Call to Action : : Build custom Build custom module -->
-  module -->
-  <section class="ct <section class="cta">
-   a">
-    <div class="container">
-      <h <div class="container2>Need">
-      <h2> a completelyNeed a completely <span <span style="background: style="background: linear-gradient(120 linear-gradient(120deg,#cddeg,#cdbb4ff,#a4ff,#a7878bfa);bfa); background-clip:text; -webkit-back background-clip:text; -webkit-background-clground-clip:textip:text; color:trans; color:transparent;">besparent;">bespoke module?</span></h2poke module?</span>
-      <p>></h2>
-      <pOur O>Our Odoo architectsdoo architects craft craft unique unique apps apps from from scratch — whether it scratch — whether it's industry's industry‑‑specific logicspecific logic, , 3rd3rd party API integration, or complex party API integration, or complex workflows workflows.</p>
-     .</p>
-      <a href="#" <a href="#" id id="contact="contactCtaBtn"CtaBtn" class="btn-primary class="btn-primary"" style="background: style="background:white; color:#white; color:#6C26C2BD9;"><iBD9;"><i class="fas fa class="fas fa-rock-rocket"></i>et"></i> Request free Request free consultation</ consultation</a>
-a>
-    </div>
-  </    </div>
-  </section>
-</mainsection>
 </main>
 
 <footer>
-
-<footer>
-  <div class="container>
-  <div class">
-    <div class="="container">
+  <div class="container">
     <div class="footer-grid">
-     footer-grid">
-      <div class=" <div class="footer-col"><hfooter-col"><h4>OdooCraft</4>OdooCraft</h4><ulh4><ul><li>About Us</li><li>About Us</li><li>O><li>Odoo Partnershipdoo Partnership</li><li</li><li>Career>Career</li</li><li>Blog</><li>Blog</lili></ul></div>
-     ></ul></div>
-      <div class="footer <div class="footer-col"><h4-col"><h4>Modules</h>Modules</h4><ul4><ul><li>Inventory</><li>Inventory</li><li>Accounting</lili><li>><li>CRM &Accounting</li><li> Sales</liCRM & Sales</li><li>HR &><li>HR & Payroll</li Payroll</li><li>E><li>E‑‑commerce</licommerce</li></ul></div></ul></div>
-      <div>
-      <div class=" class="footer-colfooter-col"><h4>"><h4>Support</h4Support</h4><ul><li><ul><li>Documentation</>Documentation</li><li>li><li>24/24/7 Ticket7 Ticket System System</li><li</li><li>Community>Community Forum</li>< Forum</li><lili>Request>Request Feature Feature</li></</li></ulul></div>
-     ></div>
-      <div class=" <div class="footer-col"><hfooter-col"><h4>Legal4>Legal</h4</h4><ul><li>><ul><li>Privacy Policy</Privacy Policy</li><li>li><li>Terms of Service</li><li>Terms of Service</li><li>LicensesLicenses</li></ul</li></ul></div>
-   ></div>
+      <div class="footer-col"><h4>OdooCraft</h4><ul><li>About Us</li><li>Partnership</li><li>Blog</li></ul></div>
+      <div class="footer-col"><h4>Modules</h4><ul><li>Inventory</li><li>Accounting</li><li>CRM & Sales</li><li>HR & Payroll</li></ul></div>
+      <div class="footer-col"><h4>Support</h4><ul><li>Documentation</li><li>24/7 Ticket</li><li>Request Feature</li></ul></div>
     </div>
- </div>
-       <div class=" <div class="copyright">
-     copyright">
-      <i class="fas fa-c <i class="fas fa-copyright"></i>opyright"></i> 2025 O 2025 OdooCraft —dooCraft — Premium Premium Odo Odoo Custom App Marketplaceo Custom App Marketplace. All trademarks. All trademarks belong to their belong respective to their respective owners.
-    </ owners.
+    <div class="copyright">
+      <i class="fas fa-copyright"></i> 2025 OdooCraft — Premium Odoo Custom App Marketplace.
     </div>
-  </div>
   </div>
 </footer>
 
 <script>
- div>
-</footer>
-
-<script>
-  // interactive demo // interactive demo alerts (sim alerts (simulateulate store experience store experience)
-  const)
-  const btnsDemo btnsDemo = document.querySelectorAll = document.querySelectorAll('.demo-module');
-('.demo-module');
-  const  const buyBtns = document.querySelectorAll('.module buyBtns = document.querySelectorAll('.module-card .-card .btnbtn-primary');
- -primary');
-  const exploreBtn = document.getElementById(' const exploreBtn = document.getElementById('exploreModulesBtnexploreModulesBtn');
-  const customDemo');
-  const customDemo = = document.getElementById('custom document.getElementById('customDemoBtn');
- DemoBtn');
-  const contact const contactBtnBtn = = document.getElementById('contactCtaBtn document.getElementById('contactCtaBtn');
-
-  function demo');
-
-  function demoAlert(Alert(moduleName)moduleName) {
-    alert(`✨ {
-    alert(`✨ Live Live demo: demo: You You are exploring "${ are exploring "${moduleName}".moduleName}". This is a This is a simulation simulation — full — full access access available available after after purchase.`);
-  purchase.`);
-  }
-
-  function purchase }
-
-  function purchaseAlert(moduleNameAlert(moduleName) {
-    alert) {
-    alert(`(`🛒 Thank you🛒 Thank you! "${! "${moduleName}" addedmoduleName}" added to to cart. (Demo environment cart. (Demo environment - - real real checkout would checkout would process process securely securely.).)`);
-  }
-
-`);
-  }
-
-   // assign // assign for for each module each module card card
-  const cards
-  const cards = document.querySelectorAll = document.querySelectorAll('.module-card('.module-card');
-  cards.forEach(c');
-  cards.forEach(card => {
-    const titleElemard => {
-    const titleElem = card.querySelector('. = card.querySelector('.module-titlemodule-title');
-    const title = title');
-    const title = titleElem ? titleElemElem ? titleElem.innerText : '.innerText : 'thisthis module';
-    const demoBtn = card module';
-    const demoBtn = card.querySelector('.demo.querySelector('.demo-module');
-   -module');
-    const buyBtn = card.querySelector const buyBtn = card.querySelector('.card('.card-actions .btn-primary');
--actions .btn-primary    if (');
-    if (demoBtn) {
-      demoBtn.addEventListenerdemoBtn) {
-('click', (      demoBtn.addEventListener('click', (e) =>e) => {
-        {
-        e.preventDefault();
-        demoAlert(title);
- e.preventDefault();
-        demoAlert(title);
-           });
-    }
-    if });
-    }
-    if (buyBtn) (buyBtn) {
-      buyBtn {
-      buyBtn.addEventListener('click',.addEventListener('click', (e) => {
-        e.preventDefault (e) => {
-        e.preventDefault();
-        purchaseAlert();
-        purchaseAlert(title);
-     (title);
-      });
-    }
+  document.getElementById('requestDemoBtn')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert("📞 Request custom module: Our team will contact you within 24h.");
   });
-    }
-  });
-
-  if (exploreBtn) });
-
-  if (expl {
-    exploreBtn.addEventListeneroreBtn) {
-    exploreBtn.addEventListener('click', (('click', (e) =>e) => {
- {
-      e.preventDefault();
-      e.preventDefault();
-      document.querySelector('.modules-showcase').      document.querySelector('.modules-showcase').scrollIntoView({scrollIntoView({ behavior: 'smooth' behavior: 'smooth' });
-    });
-  });
-    });
-  }
-  if (custom }
-  if (customDemo) {
-    customDemo.addEventListener('Demo) {
-click', (e) => {
-         customDemo.addEventListener('click', (e e.preventDefault();
-     ) => {
-      alert(" e.preventDefault();
-     📞 alert("📞 Request custom Request custom module: Our module: Our team team will contact you will contact you within 24h within 24h to discuss your Odo to discuss your Odoo requirementso requirements.");
-    });
- .");
-    });
-  }
-  if ( }
-  if (contactcontactBtn) {
-    contactBtn.addEventListener('click', (Btn) {
-    contactBtn.addEventListener('click', (e) =>e) => {
-      e.preventDefault {
-      e.preventDefault();
-();
-      alert("      alert("💬 Free💬 Free consultation: consultation: Get Get a quote a quote for for your unique your unique Odo Odoo customo custom app app. We. We'll reply'll reply ASAP ASAP!");
-!");
-    });
-     });
-  }
-  // Additional: }
-  // Additional: " "View all modules" smooth
-  const viewView all modules" smooth
-  const viewAllBtn = documentAllBtn = document.querySelector('.modules.querySelector('.modules-showcase .-showcase .btn-outbtn-outlineline');
-  if(viewAllBtn) {
-   ');
-  if(viewAllBtn) {
-    viewAllBtn.addEventListener viewAllBtn.addEventListener('click', (('click', (e) =>e) => {
-      e {
-      e.preventDefault.preventDefault();
-      alert("🌟 Explore();
-      alert("🌟 Explore our full catalog our full catalog of 150 of 150+ enterprise modules. (+ enterprise modules. (FullFull catalog catalog page page would open would open here). here).");
-    });
- ");
-    });
-  }
-</script>
-</ }
 </script>
 </body>
-body>
-</html</html>
-```>
+</html>
